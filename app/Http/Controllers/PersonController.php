@@ -9,7 +9,7 @@ class PersonController extends Controller
     private $name = "Muhammad Fikri Hidayat";
 
     public function index() {
-        return $this->name;
+        return view("person.index");
     }
 
     public function show($param) {
