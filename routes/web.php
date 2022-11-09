@@ -25,3 +25,9 @@ Route::get('/person','PersonController@index')->name('person.index');
 Route::get('/person/show/{param}','PersonController@show');
 
 Route::resource('/student','StudentController');
+
+// Methode Get
+Route::get('person/create','PersonController@create')->name('person.create');
+
+// Methode Post
+Route::post('person/store','PersonController@store')->name('person.store');
